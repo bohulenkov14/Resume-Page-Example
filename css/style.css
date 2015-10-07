@@ -156,6 +156,10 @@ ul {
   display: none;
 }
 
+.projectpic {
+  max-width: 200px;
+}
+
 img {
   padding: 10px;
 }
