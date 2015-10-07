@@ -79,6 +79,19 @@ h5 {
 
 }
 
+.skill-item {
+  width: 150px;
+  border: 1px solid #f5a623;
+  margin: 5px;
+  border-radius: 25px;
+  background-color: #f5a623;
+  text-align: center;
+}
+
+.role {
+  color: #fff;
+}
+
 p {
   font-size: 14px;
   color: #333;
@@ -93,6 +106,9 @@ a {
 }
 
 .welcome-message {
+  margin: 0 auto;
+  text-align: center;
+
   font-style: italic;
   font-size: 18px;
   color: #f3f3f3;
@@ -119,18 +135,26 @@ a {
 
 .gray {
   background-color: #f3f3f3;
-  padding-bottom: 10px;
   clear:both;
+}
+
+.one-page {
+  height: 100%;
 }
 
 .dark-gray {
   background-color: #4a4a4a;
 }
 
+.map-page-header {
+  margin-top: 50px;
+}
+
 /* TODO: Replace with image later */
 #header {
   background-color: #484848;
 }
+
 
 .flex-box {
   display: -webkit-flex;
@@ -150,10 +174,10 @@ ul {
 }
 
 .biopic {
-  float: left;
+  margin: 0 auto;
   padding: 10px;
-  width: 200px;
-  display: none;
+  max-width: 300px;
+  border-radius: 50%;
 }
 
 .projectpic {
@@ -198,21 +222,28 @@ span {
   }
 }
 
+
+#skills-h3,
+.biopic {
+  display: block;
+}
+
+
+
+@media only screen and (max-width: 400px) {
+  .biopic {
+    display: none;
+  }
+}
+
 #map {
   display: block;
-  height: 100%;
-  margin: 0 5%;
+  height: 70%;
+  margin: 10% 5%;
 }
 
 #mapDiv {
-  height: 400px;
+  height: 100%;
   width: 100%;
-  padding-bottom: 5%;
 }
 
-@media only screen and (min-width: 750px) {
-  #skills-h3,
-  .biopic {
-    display: block;
-  }
-}
