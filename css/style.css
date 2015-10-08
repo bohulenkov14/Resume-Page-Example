@@ -13,7 +13,6 @@ h6 {
   margin:0;
   font-family: "Roboto", sans-serif;
 }
-
 .clear-fix {
   overflow: auto;
 }
@@ -21,12 +20,15 @@ h6 {
 .education-entry,
 .work-entry,
 .project-entry {
-  padding: 0 5%;
+  width: 80%;
+  margin: 3% auto;
+  padding: 10px 30px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+  border-radius: 5px;
 }
 
 h1 {
   font-size: 40px;
-  color: #f5a623;
   line-height: 48px;
   display: inline;
 }
@@ -34,7 +36,6 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999;
   line-height: 29px;
   padding: 10px;
 }
@@ -42,14 +43,12 @@ h2 {
 h3 {
   font-style: italic;
   font-size: 20px;
-  color: #000;
   line-height: 22px;
 }
 
 h4 {
   font-weight: bold;
   font-size: 14px;
-  color: #4a4a4a;
   line-height: 17px;
 }
 
@@ -65,45 +64,217 @@ h5 {
 .date-text {
   font-style: italic;
   font-size: 14px;
-  color: #999;
   line-height: 16px;
   float: left;
+  margin: 0 5px;
 }
 
 .location-text {
   font-style: italic;
   font-size: 14px;
-  color: #999;
   line-height: 16px;
   float: right;
 
 }
 
 p {
-  font-size: 14px;
-  color: #333;
+  font-size: 1.2em;
   line-height: 21px;
 }
 
 a {
-  color: #1199c3;
   text-decoration: none;
   margin-top: 10px;
   display: block;
+}
+a {
+  font-size: 1.5em;
 }
 
 .welcome-message {
   font-style: italic;
   font-size: 18px;
-  color: #f3f3f3;
   line-height: 28px;
 }
 
 #skills-h3 {
-  color: #f5ae23;
   display: none;
 }
 
+
+.skill-item {
+  border-radius: 25px;
+  padding: 5px;
+}
+
+.box-shadow {
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.sub-title {
+    font-size: 1.8em;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+.sections {
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.map-card {
+  width:  80%;
+  height:  80%;
+  margin: 0 auto;
+  border-radius: 5px;
+  padding: 25px;
+}
+
+.menu {
+  margin: auto 0;
+  list-style-type: disc;
+  text-align: center;
+}
+.fixed-nav {
+  position: fixed;
+  top: 0;
+}
+#nav-bar {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+
+  background-color: #AB3C5C;
+
+  overflow: hidden;
+  z-index: 100;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+}
+#nav-menu {
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  justify-content: space-around;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  text-align: center;
+}
+#navemenu li {
+  border-bottom-style: solid;
+  border-width: 1px;
+  border-color: white;
+  padding: 0;
+  border: none;
+}
+.sum-entry {
+  padding-bottom: 10px;
+}
+a.nav-item {
+  color: white;
+  height: auto;
+  padding: 10px 20px;
+  margin-top: 0px;
+  display: block;
+  text-decoration: none;
+  -webkit-transition: background-color 0.2s ease-out;
+  transition: background-color 0.2s ease-out;
+  white-space: nowrap;
+  font-weight: 600;
+}
+a.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+a.nav-item:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+  outline: 0;
+}
+a.nav-item:active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+li {
+    display: inline-block;
+    text-align: -webkit-match-parent;
+}
+/*=====================================*/
+/*Color scheme*/
+/*=====================================*/
+.light-green {
+  background-color: #b9cd35;
+}
+.light-green-text {
+  color: #b9cd35;
+}
+.green {
+  background-color: #97ad00;
+}
+.green-text {
+  color: #97ad00;
+}
+.dark-green {
+  background-color: #768800;
+}
+.dark-green-text {
+  color: #768800;
+}
+
+.poison-green {
+  background-color: #39ac2d;
+}
+
+.poison-green-text {
+  color: #39ac2d;
+}
+
+.pastel {
+  background-color: #e5ef9c;
+}
+
+.pastel-text {
+  color: #e5ef9c;
+}
+
+.white {
+  background-color: #eaecde;
+}
+
+.white-text {
+  color: #eaecde;
+}
+
+.vinous {
+  background-color: #890007;
+}
+
+.vinous-text {
+  color: #890007;
+}
+
+.metallic {
+  background-color: #000000;
+}
+
+.metallic-text {
+  color: #bcc6bb;
+}
+
+.purple {
+  background-color: #50005c;
+}
+
+.purple-text {
+  color: #50005c;
+}
+
+/*=====================================*/
+
+/*
 .orange {
   background-color: #f5ae23;
 }
@@ -125,13 +296,13 @@ a {
 
 .dark-gray {
   background-color: #4a4a4a;
-}
+}*/
 
 /* TODO: Replace with image later */
-#header {
+/*#header {
   background-color: #484848;
 }
-
+*/
 .flex-box {
   display: -webkit-flex;
   display: flex;
@@ -151,18 +322,17 @@ ul {
 
 .biopic {
   float: left;
-  padding: 10px;
   width: 200px;
   display: none;
+  margin: 10px;
 }
 
 .projectpic {
   max-width: 200px;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 
-img {
-  padding: 10px;
-}
 
 span {
   padding: 5px;
@@ -201,13 +371,11 @@ span {
 #map {
   display: block;
   height: 100%;
-  margin: 0 5%;
 }
 
 #mapDiv {
-  height: 400px;
+  height: 700px;
   width: 100%;
-  padding-bottom: 5%;
 }
 
 @media only screen and (min-width: 750px) {

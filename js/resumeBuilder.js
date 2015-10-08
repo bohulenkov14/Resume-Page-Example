@@ -11,24 +11,14 @@ var bio = {
   },
   "biopic":"http://placekitten.com/g/500/500",
   "skills": ["C#", "C++", "HTML", "CSS", "ASP.NET MVC", "git", "hg", "svn"],
-  "display": function() {
+  "displayHeader": function() {
     var formatterHeaderName = HTMLheaderName.replace("%data%", bio.name);
     var formatterRole = HTMLheaderRole.replace("%data%", bio.role);
     $("#header").prepend(formatterRole);
     $("#header").prepend(formatterHeaderName);
 
 
-    var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
-    var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
-    var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
-    var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
-    var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
-
-    $("#topContacts").append(formattedMobile);
-    $("#topContacts").append(formattedEmail);
-    $("#topContacts").append(formattedTwitter);
-    $("#topContacts").append(formattedGithub);
-    $("#topContacts").append(formattedLocation);
+    bio.appendContacts("#topContacts");
 
     var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
     $("#header").append(formattedBioPic);
@@ -43,6 +33,26 @@ var bio = {
         $("#skills").append(formattedSkill);
       }
     }
+  },
+  "displayFooter": function() {
+    bio.appendContacts("#footerContacts");
+  },
+  "display": function() {
+    bio.displayHeader();
+    bio.displayFooter();
+  },
+  "appendContacts" : function(destination) {
+    var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
+    var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+    var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+    var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+    var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+
+    $(destination).append(formattedMobile);
+    $(destination).append(formattedEmail);
+    $(destination).append(formattedTwitter);
+    $(destination).append(formattedGithub);
+    $(destination).append(formattedLocation);
   }
 }
 
@@ -103,13 +113,13 @@ var projects = {
     "title": "Distributed Computing Framework",
     "dates": "01.09.2012 - 30.06.2013",
     "description": "Framework for building distributed computing systems",
-    "images":["http://placekitten.com/g/500/500", "http://placekitten.com/g/500/500"]
+    "images":["http://placekitten.com/g/500/500"]
   },
   {
     "title": "PCA clustering algorithms research",
     "dates": "01.09.2012 - 31.12.2012",
     "description": "research work on prinipal component analysis for text clustering",
-    "images":["http://placekitten.com/g/500/500", "http://placekitten.com/g/500/500"]
+    "images":["http://placekitten.com/g/500/500"]
   }],
   "display": function() {
     if (projects.projects.length > 0) {
@@ -204,7 +214,26 @@ function displayWork()
     document.getElementById('lets-connect').style.display = 'none';
   }
 
-  $("#mapDiv").append(googleMap);
+  $("#map-wnd").append(googleMap);
 }
 
 displayWork();
+
+$(function() {
+  var navPosition = $('#nav-bar').offset().top -10;
+  var navBar = document.getElementById('nav-bar');
+  var header = document.getElementById('header');
+
+  function navControl() {
+    var currentScroll = $(document).scrollTop();
+    if (currentScroll >= navPosition) {
+      navBar.classList.add('fixed-nav');
+      header.classList.add('expand-header');
+    } else {
+      navBar.classList.remove('fixed-nav');
+      header.classList.remove('expand-header');
+    }
+  }
+
+  $(window).scroll(navControl);
+});
