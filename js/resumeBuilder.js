@@ -220,8 +220,8 @@ function displayWork()
 displayWork();
 
 $(function() {
-  var navPosition = $('#nav-bar').offset().top -10;
-  var navBar = document.getElementById('nav-bar');
+  var navPosition = $('.nav-bar').offset().top -10;
+  var navBar = $('.nav-bar').get(0);
   var header = document.getElementById('header');
 
   function navControl() {
