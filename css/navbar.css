@@ -1,0 +1,42 @@
+.fixed-nav {
+  position: fixed;
+  top: 0;
+}
+.nav-bar {
+  display: flex;
+  width: 100%;
+  max-width: 1000px;
+  background-color: #b9b9b9;
+  overflow: hidden;
+  z-index: 100;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+}
+.nav-menu {
+  padding: 0;
+  list-style-type: none;
+  position: relative;
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+  flex-direction: row;
+  text-align: center;
+}
+
+a.nav-item {
+  color: white;
+  height: auto;
+  padding: 10px 20px;
+  margin-top: 0px;
+  display: block;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+li {
+    display: inline-block;
+    text-align: -webkit-match-parent;
+}
+
+.expand-header {
+  margin-bottom: 30px;
+}

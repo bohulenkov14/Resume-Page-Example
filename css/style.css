@@ -27,6 +27,11 @@ h6 {
   border-radius: 5px;
 }
 
+.section {
+  padding-top: 80px;
+  padding-bottom: 70px;
+}
+
 h1 {
   font-size: 40px;
   line-height: 48px;
@@ -60,6 +65,84 @@ h5 {
 
 }
 
+p {
+  font-size: 1.2em;
+  line-height: 21px;
+}
+
+a {
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+}
+a {
+  font-size: 1.5em;
+}
+
+#main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/*=====================================*/
+/*Color scheme*/
+/*=====================================*/
+.light-grey {
+  background-color: #b9b9b9;
+}
+
+.light-grey-text {
+  color: #b9b9b9;
+}
+
+.grey {
+  background-color: #979797;
+}
+
+.grey-text {
+  color: #979797;
+}
+
+.dark-grey {
+  background-color: #767676;
+}
+
+.dark-grey-text {
+  color: #767676;
+}
+
+.gunmetal {
+  background-color: #393939;
+}
+
+.gunmetal-text {
+  color: #393939;
+}
+
+.gainsboro {
+  background-color: #e5e5e5;
+}
+
+.gainsboro-text {
+  color: #e5e5e5;
+}
+
+.white {
+  background-color: #eaeaea;
+}
+
+.white-text {
+  color: #eaeaea;
+}
+
+.dim-grey {
+  background-color: #898989;
+}
+
+.dim-grey-text {
+  color: #898989;
+}
+/*=====================================*/
 
 .date-text {
   font-style: italic;
@@ -77,20 +160,6 @@ h5 {
 
 }
 
-p {
-  font-size: 1.2em;
-  line-height: 21px;
-}
-
-a {
-  text-decoration: none;
-  margin-top: 10px;
-  display: block;
-}
-a {
-  font-size: 1.5em;
-}
-
 .welcome-message {
   font-style: italic;
   font-size: 18px;
@@ -100,7 +169,6 @@ a {
 #skills-h3 {
   display: none;
 }
-
 
 .skill-item {
   border-radius: 25px;
@@ -112,13 +180,9 @@ a {
 }
 
 .sub-title {
-    font-size: 1.8em;
-    padding-top: 20px;
-    margin-bottom: 10px;
-}
-.sections {
-    padding-top: 80px;
-    padding-bottom: 70px;
+  font-size: 1.8em;
+  padding-top: 20px;
+  margin-bottom: 10px;
 }
 
 .map-card {
@@ -129,152 +193,6 @@ a {
   padding: 25px;
 }
 
-.menu {
-  margin: auto 0;
-  list-style-type: disc;
-  text-align: center;
-}
-.fixed-nav {
-  position: fixed;
-  top: 0;
-}
-.nav-bar {
-  display: flex;
-  width: 100%;
-  background-color: #b9cd35;
-  overflow: hidden;
-  z-index: 100;
-  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
-}
-.nav-menu {
-  padding: 0;
-  list-style-type: none;
-  position: relative;
-  display: flex;
-  max-width: 800px;
-  margin: 0 auto;
-  flex-direction: row;
-  text-align: center;
-}
-
-a.nav-item {
-  color: white;
-  height: auto;
-  padding: 10px 20px;
-  margin-top: 0px;
-  display: block;
-  text-decoration: none;
-  -webkit-transition: background-color 0.2s ease-out;
-  transition: background-color 0.2s ease-out;
-  white-space: nowrap;
-  font-weight: 600;
-}
-
-li {
-    display: inline-block;
-    text-align: -webkit-match-parent;
-}
-/*=====================================*/
-/*Color scheme*/
-/*=====================================*/
-.light-green {
-  background-color: #b9cd35;
-}
-.light-green-text {
-  color: #b9cd35;
-}
-.green {
-  background-color: #97ad00;
-}
-.green-text {
-  color: #97ad00;
-}
-.dark-green {
-  background-color: #768800;
-}
-.dark-green-text {
-  color: #768800;
-}
-
-.poison-green {
-  background-color: #39ac2d;
-}
-
-.poison-green-text {
-  color: #39ac2d;
-}
-
-.pastel {
-  background-color: #e5ef9c;
-}
-
-.pastel-text {
-  color: #e5ef9c;
-}
-
-.white {
-  background-color: #eaecde;
-}
-
-.white-text {
-  color: #eaecde;
-}
-
-.vinous {
-  background-color: #890007;
-}
-
-.vinous-text {
-  color: #890007;
-}
-
-.metallic {
-  background-color: #000000;
-}
-
-.metallic-text {
-  color: #bcc6bb;
-}
-
-.purple {
-  background-color: #50005c;
-}
-
-.purple-text {
-  color: #50005c;
-}
-
-/*=====================================*/
-
-/*
-.orange {
-  background-color: #f5ae23;
-}
-
-.orange-text {
-  color: #f5ae23;
-}
-
-.white-text {
-  font-weight: bold;
-  color: #fff;
-}
-
-.gray {
-  background-color: #f3f3f3;
-  padding-bottom: 10px;
-  clear:both;
-}
-
-.dark-gray {
-  background-color: #4a4a4a;
-}*/
-
-/* TODO: Replace with image later */
-/*#header {
-  background-color: #484848;
-}
-*/
 .flex-box {
   display: -webkit-flex;
   display: flex;
@@ -286,10 +204,6 @@ li {
 
 .center-content {
   padding: 2.5% 5%;
-}
-
-ul {
-  list-style-type: none;
 }
 
 .biopic {
@@ -305,7 +219,6 @@ ul {
   margin-bottom: 10px;
 }
 
-
 span {
   padding: 5px;
 }
@@ -315,7 +228,6 @@ span {
 }
 
 /* Media queries to handle various device widths */
-
 @media only screen and (max-width: 1024px) {
   #lets-connect {
     margin-top: 5%;
@@ -340,6 +252,13 @@ span {
   }
 }
 
+@media only screen and (min-width: 750px) {
+  #skills-h3,
+  .biopic {
+    display: block;
+  }
+}
+
 #map {
   display: block;
   height: 100%;
@@ -348,11 +267,4 @@ span {
 #mapDiv {
   height: 700px;
   width: 100%;
-}
-
-@media only screen and (min-width: 750px) {
-  #skills-h3,
-  .biopic {
-    display: block;
-  }
 }
